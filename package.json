@@ -10,7 +10,9 @@
     "start:u:9": "PORT=9999 npm run start",
     "start:w:6": "set PORT=6666&&npm start",
     "start:all": "concurrently \"npm run start:u:7\" \"npm run start:u:8\" \"npm run start:u:9\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -23,14 +25,16 @@
   },
   "homepage": "https://github.com/thoschu/de.schulte360.web.snake#readme",
   "dependencies": {
-    "concurrently": "^4.1.0",
+    "concurrently": "^5.0.1",
     "express": "^4.16.4",
     "js-csp": "^1.0.1",
-    "ramda": "^0.24.1",
-    "socket.io": "^2.2.0"
+    "ramda": "^0.27.2",
+    "socket.io": "^3.0.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "grunt": "^1.0.3",
     "grunt-buddyjs": "^0.1.2"
-  }
+  },
+  "snyk": true
 }
