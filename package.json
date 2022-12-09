@@ -24,7 +24,7 @@
   "homepage": "https://github.com/thoschu/de.schulte360.web.snake#readme",
   "dependencies": {
     "concurrently": "^4.1.0",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "js-csp": "^1.0.1",
     "ramda": "^0.24.1",
     "socket.io": "^2.2.0"
